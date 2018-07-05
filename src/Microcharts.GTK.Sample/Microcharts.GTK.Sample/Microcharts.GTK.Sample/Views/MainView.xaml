@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Microcharts.GTK.Sample.Views.MainView"
+             xmlns:controls="clr-namespace:Microcharts.GTK.Sample.Controls">
+    <ScrollView BackgroundColor="White">
+        <StackLayout>
+            <Button       
+                Text="Change Chart"
+                Clicked="ChangeChart" />
+            <controls:ChartView
+                x:Name="chart" 
+                HeightRequest="350" 
+                BackgroundColor="White" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
